@@ -11,6 +11,7 @@ document.querySelector("#search").addEventListener("keypress", (e) => {
                 if(searchYear == data[key].Year) {
                     document.querySelector("#cityName").innerHTML = data[key].City;
                     document.querySelector("#countryName").innerHTML = data[key].Country;
+                    document.querySelector("#coverImg").src = data[key].image;
                 }
             }
         })
